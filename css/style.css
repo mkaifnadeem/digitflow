@@ -1,17 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-/* |CSS Reset| */
+
+:root {
+  --primary: #2563eb;
+  --dark: #1e293b;
+  --light: #f8fafc;
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* || */
-img {
-  display: block;
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: var(--light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
 }
 
-/* |GENERAL STYLE| */
-body {
-  font-family: "Nunito", sans-serif;
+.container {
+  max-width: 800px;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #4ade80, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  margin-inline: auto;
+  opacity: 0.8;
+  max-width: 600px;
+}
+
+.note {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.note h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.note-content {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  background: #4ade80;
+  color: #14532d;
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+footer {
+  margin-top: 3rem;
+  opacity: 0.6;
+  font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .tagline {
+    font-size: 1.25rem;
+  }
 }

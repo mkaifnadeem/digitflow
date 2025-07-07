@@ -1,0 +1,38 @@
+.gitmessage.txt# Default .gitignore for web projects
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+/dist
+/build
+/public/assets
+
+# Dependency directories
+/node_modules
+/bower_components
+
+# Environment variables
+.env
+.env.local
+
+# Log files
+*.log
+npm-debug.log*
+
+# Editor/IDE files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+ehthumbs.db
+Desktop.ini
+
+# Commit template (include it in repo)
+.gitmessage.txt
